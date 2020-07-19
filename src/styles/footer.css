@@ -1,0 +1,117 @@
+.dock-container {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    overflow: visible !important;
+}
+
+.doc {
+  overflow: visible !important;
+}
+
+.dock-container ul {
+    background: rgba(101, 101, 101,0.6);
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    margin: 0;
+    padding: 2px 20px;
+    overflow: visible !important;
+}
+
+.dock-container li {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+.dock-container li img {
+    width: 56px;
+    height: 56px;
+    -webkit-transition: all 0.3s;
+    -webkit-transform-origin: 50% 100%;
+  }
+  .dock-container li:hover img { 
+    -webkit-transform: scale(1.5);
+    margin: 0 1.5em;
+  }
+  .dock-container li:hover + li img,
+  .dock-container li.prev img {
+    -webkit-transform: scale(1.2);
+    margin: 0 1em;
+  }
+
+  .dock-container li:hover + li img,
+  .dock-container li.next img {
+    -webkit-transform: scale(1.2);
+    margin: 0 1em;
+  }
+
+  .dock-container li span {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+.dock-container li:hover span {
+    display: block;
+    color: #fff;
+}
+
+.activeDotContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.activeDot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .dock-container li span {
+    max-width: 8rem !important;
+    min-width: 4rem !important;
+    width: auto !important;
+  }
+  .dock-container ul {
+    background: rgba(101, 101, 101,0.6);
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    margin: 0;
+    padding: 2px 8px;
+    overflow: visible !important;
+}
+  .dock-container li img {
+    width: 46px;
+    height: 46px;
+    -webkit-transition: all 0.3s;
+    -webkit-transform-origin: 50% 100%;
+  }
+  .dock-container li:hover img { 
+    -webkit-transform: scale(1.2);
+    margin: 0 0.6em;
+  }
+  .dock-container li:hover + li img,
+  .dock-container li.prev img {
+    -webkit-transform: scale(1.1);
+    margin: 0 0.4em;
+  }
+
+  .dock-container li:hover + li img,
+  .dock-container li.next img {
+    -webkit-transform: scale(1.1);
+    margin: 0 0.4em;
+  }
+
+}

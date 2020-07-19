@@ -1,5 +1,44 @@
+body {
+  overflow: hidden !important;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #4b6cb7, #182848); */
+  /* background: linear-gradient(to bottom, #870000, #271008); */
+  /* background: linear-gradient(to right, #061161, #780206);  */
+  /* background: linear-gradient(to bottom, #6E48AA, #9D50BB); */
+  /* background: linear-gradient(0deg, rgba(28,45,83,1) 0%, rgb(44, 49, 51) 100%, rgba(0,212,255,1) 100%); */
+  /* background-color: rgb(18 32 41); */
+  /* background:url("./assets/back1.jpg"); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-top: 0;
+  background-color: #fff;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 98vh;
+  }
 }
 
 .App-logo {
@@ -15,7 +54,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
