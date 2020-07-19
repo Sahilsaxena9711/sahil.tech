@@ -69,6 +69,19 @@
   overflow-y: hidden !important;
 }
 
+.itemContainer ul, .itemContainer ul ol {
+  padding: 0;
+  padding-bottom: 1rem;
+  color: #fff;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.itemContainer ul ol a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .itemContainer:active, .itemContainer:focus, .itemContainer:hover {
   overflow-y: auto !important;
 }

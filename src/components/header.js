@@ -11,7 +11,9 @@ export default class Header extends Component {
         return (
             <div className={"header"}>
                 <div className={"headerLeft"}>
-                    <img className={"headerImages ml-10"} src={info} />
+                    <div onClick={() => this.props.openTab("Info", "info")}>
+                        <img className={"headerImages ml-10"} src={info} />
+                    </div>
                     {window.screen.width < 600 ? null : <span className={"author"}>
                         {this.props.activeTabName}
                     </span>}

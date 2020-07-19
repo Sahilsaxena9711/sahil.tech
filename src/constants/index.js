@@ -24,6 +24,9 @@ export const POSSIBLE_TABS = new OrderedMap({
     },
     all: {
         label: "Search"
+    },
+    info: {
+        label: "Info"
     }
 });
 
