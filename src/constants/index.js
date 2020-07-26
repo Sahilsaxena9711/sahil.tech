@@ -53,6 +53,16 @@ export const side_projects = new OrderedMap({
         url: require("../assets/covid.png"),
         page: "https://covid19vsindia.in/"
     },
+    "beatsy": {
+        label: "Beatsy",
+        url: require("../assets/beatsy.jpg"),
+        page: "https://beatsy.surge.sh"
+    },
+    "woc": {
+        label: "World of chat",
+        url: require("../assets/woc.jpg"),
+        page: "https://worldofchat.surge.sh"
+    },
     "expensify": {
         label: "Expensify",
         url: require("../assets/expensify.png"),
