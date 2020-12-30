@@ -101,4 +101,17 @@
         font-family: 'Josefin Sans', sans-serif;
         font-size: 14px;
     }
+
+    .workLabel {
+        font-size: 11px;
+    }
+
+    .workSubText {
+        font-size: 10px;
+    }
+
+    .workImg {
+        height: 44px;
+        width: 44px;
+    }
 }

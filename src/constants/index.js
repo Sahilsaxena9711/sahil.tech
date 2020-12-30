@@ -39,7 +39,12 @@ export const WORK_EXPERIENCE = new OrderedMap({
     "progcap": {
         label: "PROGCAP",
         url: "https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/nkvkupmkx1g2bdurxvpx",
-        subText: "Aug 2019 - Present"
+        subText: "Aug 2019 - Nov 2020"
+    },
+    "moglix": {
+        label: "Moglix",
+        url: "https://media-exp1.licdn.com/dms/image/C4D0BAQFfb9QcdvZdyA/company-logo_200_200/0/1519862527476?e=1617235200&v=beta&t=bJeeT5jVtVIwo7QrJdfFVZDqtIW9z08jMTDCt1h1twQ",
+        subText: "Dec 2020 - Present"
     }
 });
 
